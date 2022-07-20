@@ -1,0 +1,186 @@
+
+body{
+    margin: 0px;
+    font-family: Arial,sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    font-family: Retroica, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+p{
+    font-family: 'Louis george cafe', sans-serif;
+    color: #a1a6af;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#navbar{
+    width: 60%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar>img{
+    cursor: pointer;
+}
+#logo{
+    width: 140px;
+}
+#tags>a{
+    font-family: 'Louis george cafe', sans-serif;
+    margin: 20px;
+    text-decoration: none;
+    color: #222222;  
+    font-size: 14px;
+}
+
+#main{
+    width: 60%;
+    margin: auto;
+    padding-top: 20px;
+}
+#desc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 70px;
+}
+#desc>img{
+    width: 260px;
+    margin-top: 25px;
+    padding-left: 30px;
+}
+#desc>h1{
+    font-size: 38px;
+    font-family: Retroica, sans-serif;
+    line-height: 44px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: #333333;
+}
+#desc>p{
+    font-family: 'Louis george cafe', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #686868;
+}
+#desc>button{
+    width: 210px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fec;
+    border: none;
+    border-radius: 5px;
+}
+#desc>button>a{
+    color: #fa824c;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Louis george cafe', sans-serif; 
+}
+#partner{
+    display: flex;
+    margin-top: 110px;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+#partner>div{
+    width: 47.5%;
+}
+#partner img{
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#partner>div>div{
+    display: flex;
+}
+#partner>div>div>img{
+    margin: 20px;
+    width: 50px;
+}
+#partner h5{
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+#revenue{
+    margin-top: 100px;
+}
+#revenue>img{
+    width: 100%;
+}
+
+#footer{
+    background-color: #fec;
+    color: #fa824c;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-top: 80px;
+}
+#footer>div{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    padding: 45px 0px 0px 0px;
+}
+#topf{
+    justify-content: space-between;
+}
+#bottomf{
+    flex-direction: column;
+}
+#midf{
+    justify-content: space-around;
+}
+#bottomf>div{
+    border: 1px solid #fa824c;
+    margin-bottom: 5px;
+}
+#bottomf>p{
+    margin-left: 10px;
+}
+#footer p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #a1a6af;
+}
+#footer a{
+    font-family: 'Louis george cafe', sans-serif;
+    color: #dd703f;
+    font-size: 13px;
+    font-weight: normal;
+}
+.left, #right{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+}
+.left>div, #right>div{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+#right{
+    align-items: flex-end;
+    text-align: right;
+}
