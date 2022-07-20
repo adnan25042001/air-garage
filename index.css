@@ -1,3 +1,4 @@
+
 body {
     margin: 0px;
     font-family: Arial, sans-serif;
@@ -77,7 +78,21 @@ p {
 
 /* ********************************************** Main Section start ******************************************************* */
 
-#main {
+#navbar>img{
+    cursor: pointer;
+}
+#logo{
+    width: 140px;
+}
+#tags>a{
+    font-family: 'Louis george cafe', sans-serif;
+    margin: 20px;
+    text-decoration: none;
+    color: #222222;  
+    font-size: 14px;
+}
+
+#main{
     width: 60%;
     margin: auto;
     padding-top: 20px;
@@ -279,6 +294,7 @@ p {
     margin-top: 20px;
     margin-top: 80px;
 }
+
 #footer > div {
     width: 60%;
     margin: auto;
