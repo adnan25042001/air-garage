@@ -1,21 +1,45 @@
 
-body{
+body {
     margin: 0px;
-    font-family: Arial,sans-serif;
+    font-family: Arial, sans-serif;
 }
-a{
+a {
     text-decoration: none;
 }
-h2{
+h1,
+h2,
+h3,
+h4 {
     font-family: Retroica, sans-serif;
     font-weight: bold;
+    color: #333333;
+}
+h1 {
+    font-size: 38px;
+    line-height: 44px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+h2 {
     font-size: 32px;
     line-height: 36px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
-p{
-    font-family: 'Louis george cafe', sans-serif;
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+h4 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p {
+    font-family: "Louis george cafe", sans-serif;
     color: #a1a6af;
     font-size: 16px;
     line-height: 24px;
@@ -23,7 +47,9 @@ p{
     margin-bottom: 15px;
 }
 
-#navbar{
+/* ********************************************* Navigation bar section start ************************************************ */
+
+#navbar {
     width: 60%;
     height: 60px;
     margin: auto;
@@ -31,6 +57,27 @@ p{
     justify-content: space-between;
     align-items: center;
 }
+#navbar > img {
+    cursor: pointer;
+}
+#logo {
+    width: 140px;
+}
+#tags > a {
+    font-family: "Louis george cafe", sans-serif;
+    margin: 20px;
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px;
+}
+#tags > a:hover {
+    color: #fa824c;
+}
+
+/* ********************************************** Navigation bar section end ********************************************************* */
+
+/* ********************************************** Main Section start ******************************************************* */
+
 #navbar>img{
     cursor: pointer;
 }
@@ -50,7 +97,10 @@ p{
     margin: auto;
     padding-top: 20px;
 }
-#desc{
+
+/* *************************************************** Description section start *************************************************** */
+
+#desc {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -59,27 +109,18 @@ p{
     margin: auto;
     margin-bottom: 70px;
 }
-#desc>img{
+#desc > img {
     width: 260px;
     margin-top: 25px;
     padding-left: 30px;
 }
-#desc>h1{
-    font-size: 38px;
-    font-family: Retroica, sans-serif;
-    line-height: 44px;
-    margin-top: 20px;
-    font-weight: bold;
-    margin-bottom: 0px;
-    color: #333333;
-}
-#desc>p{
-    font-family: 'Louis george cafe', sans-serif;
+#desc > p {
+    font-family: "Louis george cafe", sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: #686868;
 }
-#desc>button{
+#desc > button {
     width: 210px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -88,99 +129,220 @@ p{
     border: none;
     border-radius: 5px;
 }
-#desc>button>a{
+#desc > button > a {
     color: #fa824c;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: 'Louis george cafe', sans-serif; 
+    font-family: "Louis george cafe", sans-serif;
 }
-#partner{
+
+/* **************************************************** Description section end ******************************************************* */
+
+/* **************************************************** Partner section start ********************************************************** */
+
+#partner {
     display: flex;
     margin-top: 110px;
     justify-content: space-between;
     padding: 0px 10px;
 }
-#partner>div{
+#partner > div {
     width: 47.5%;
 }
-#partner img{
+#partner img {
     width: 100%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-#partner>div>div{
+#partner > div > div {
     display: flex;
 }
-#partner>div>div>img{
+#partner > div > div > img {
     margin: 20px;
     width: 50px;
 }
-#partner h5{
+#partner h5 {
     margin-bottom: 0px;
     margin-top: 5px;
 }
 
-#revenue{
+/* ***************************************************** Partner sectionn end ******************************************************** */
+
+/* ***************************************************** Revenue section start ******************************************************* */
+
+#revenue {
     margin-top: 100px;
 }
-#revenue>img{
+#revenue > img {
     width: 100%;
 }
 
-#footer{
+/* ************************************************** Revenue section end ************************************************* */
+
+/* ***************************************** value Proposition section and Data section start ****************************************** */
+
+#proposition,
+#data {
+    margin-top: 100px;
+}
+.ease {
+    display: flex;
+    gap: 25px;
+}
+.ease > div {
+    width: 30%;
+    border: 1px solid rgb(243, 243, 243);
+    padding: 30px 20px 50px;
+    border-radius: 20px;
+    transition: ease-out 1s;
+}
+.ease > div:hover {
+    border: 1px solid rgb(185, 185, 185);
+}
+.ease > div > div {
+    width: 60px;
+    height: 60px;
+}
+.ease > div > div img {
+    width: 90%;
+    transition: ease-out 0.3s;
+}
+.ease > div > div img:hover {
+    width: 100%;
+}
+
+/* **************************************** value Proposition section and Data section end ***************************************** */
+
+/* ************************************************* Deal Button section start ********************************************* */
+
+#dealbtn {
+    width: 100%;
+    padding: 20px 0px 30px;
+    margin-top: 70px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    text-align: center;
+    transition: ease-out 0.5s;
+    cursor: pointer;
+}
+#dealbtn:hover {
+    background-color: #e4e4e4;
+}
+#dealbtn > h1 {
+    margin-bottom: 20px;
+}
+
+/* ************************************************* Deal Button section end ********************************************* */
+
+/* ************************************************ Parking Images section start ****************************************** */
+
+#parkingimg {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+}
+#parkingimg > div {
+    width: 48.8%;
+}
+#parkingimg > div > img {
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* ************************************************ Parking Images section end ****************************************** */
+
+/* ************************************************ dashboard section start ******************************************* */
+
+#dashboard{
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid rgb(243, 243, 243);
+    border-radius: 20px;
+}
+#dashboard img{
+    width: 95%;
+    margin: 20px auto 0px;
+}
+#dashboard button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #333333;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+}
+#dashboard button:hover{
+    background-color: #eeeeee;
+}
+
+/* ************************************************ dashboard section end ******************************************* */
+
+
+
+/* *************************************************** Main section end ************************************************ */
+
+/* ************************************************** Footer section start ************************************************** */
+
+#footer {
     background-color: #fec;
     color: #fa824c;
     font-size: 12px;
     margin-top: 20px;
     margin-top: 80px;
 }
-#footer>div{
+
+#footer > div {
     width: 60%;
     margin: auto;
     display: flex;
     padding: 45px 0px 0px 0px;
 }
-#topf{
+#topf {
     justify-content: space-between;
 }
-#bottomf{
+#bottomf {
     flex-direction: column;
 }
-#midf{
+#midf {
     justify-content: space-around;
 }
-#bottomf>div{
+#bottomf > div {
     border: 1px solid #fa824c;
     margin-bottom: 5px;
 }
-#bottomf>p{
+#bottomf > p {
     margin-left: 10px;
 }
-#footer p{
+#footer p {
     font-size: 16px;
     line-height: 24px;
     color: #a1a6af;
 }
-#footer a{
-    font-family: 'Louis george cafe', sans-serif;
+#footer a {
+    font-family: "Louis george cafe", sans-serif;
     color: #dd703f;
     font-size: 13px;
     font-weight: normal;
 }
-.left, #right{
+.left,
+#right {
     width: 23%;
     display: flex;
     flex-direction: column;
 }
-.left>div, #right>div{
+.left > div,
+#right > div {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
-#right{
+#right {
     align-items: flex-end;
     text-align: right;
 }
+
+/* ******************************************************** Footer section end ************************************************** */
