@@ -1,0 +1,57 @@
+#bottom{
+    width: 940px;
+    margin: auto;
+}
+
+/* ************************************************ Partner section start ********************************************** */
+
+#extra{
+    margin-top: 25px;
+}
+#partnerImg > img {
+    margin: 20px;
+    margin-top: 0px;
+    width: 70px;
+}
+
+/* ************************************************ Partner section end ********************************************** */
+
+/* ************************************************ About Image section start *************************************** */
+
+
+#aboutImg{
+    padding: 20px;
+    background-color: #f4f6f8;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+#aboutImg>div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+#aboutImg img{
+    width: 100%;
+    margin-top: 10px;
+}
+#aboutImg>div:nth-child(1)>div:first-child{
+    width: 40%;
+}
+#aboutImg>div:nth-child(1)>div:last-child{
+    width: 55%;
+    margin-right: 45px;
+}
+#aboutImg>div:nth-child(2)>div:first-child{
+    width: 52%;
+}
+#aboutImg>div:nth-child(2)>div:last-child{
+    width: 40%;
+}
+#aboutImg>div:nth-child(3)>div:first-child{
+    width: 54%;
+}
+#aboutImg>div:nth-child(3)>div:last-child{
+    width: 42%;
+}
+
+/* ************************************************ About Image section end *************************************** */

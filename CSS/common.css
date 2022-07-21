@@ -52,20 +52,19 @@ p {
     display: flex;
     margin-top: 110px;
     justify-content: space-between;
-    padding: 0px 10px;
 }
 #partner > div {
-    width: 47.5%;
+    width: 47.7%;
 }
 #partner img {
     width: 100%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-#partner > div > div {
+#partnerImg {
     display: flex;
 }
-#partner > div > div > img {
+#partnerImg > img {
     margin: 20px;
     width: 50px;
 }
@@ -122,3 +121,24 @@ p {
 }
 
 /* **************************************** value Proposition section and Data section end ***************************************** */
+
+/* ****************************************** Deal and Learn Button section start **************************************** */
+
+.bigBtn {
+    width: 100%;
+    padding: 20px 0px 30px;
+    margin-top: 70px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    text-align: center;
+    transition: ease-out 0.5s;
+    cursor: pointer;
+}
+.bigBtn:hover {
+    background-color: #e4e4e4;
+}
+.bigBtn > h1 {
+    margin-bottom: 20px;
+}
+
+/* ******************************************** Deal and Learn Button section end ***************************************** */

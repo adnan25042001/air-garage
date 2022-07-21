@@ -74,27 +74,6 @@
 
 /* **************************************************** Description section end ******************************************************* */
 
-/* ****************************************** Deal and Learn Button section start **************************************** */
-
-.deal-LearnBtn {
-    width: 100%;
-    padding: 20px 0px 30px;
-    margin-top: 70px;
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    text-align: center;
-    transition: ease-out 0.5s;
-    cursor: pointer;
-}
-.deal-LearnBtn:hover {
-    background-color: #e4e4e4;
-}
-.deal-LearnBtn > h1 {
-    margin-bottom: 20px;
-}
-
-/* ******************************************** Deal and Learn Button section end ***************************************** */
-
 /* ************************************************ Parking Images section start ****************************************** */
 
 #parkingimg {
