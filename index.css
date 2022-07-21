@@ -110,7 +110,7 @@ p {
     width: 210px;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 20px 0px;
     background-color: #fec;
     border-radius: 5px;
     color: #fa824c;
