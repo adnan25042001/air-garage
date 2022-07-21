@@ -1,8 +1,7 @@
-
 /* ********************************************* Navigation bar section start ************************************************ */
 
 #navbar {
-    width: 60%;
+    width: 940px;
     height: 60px;
     margin: auto;
     display: flex;
@@ -31,7 +30,7 @@
 /* ********************************************** Main Section start ******************************************************* */
 
 #main {
-    width: 60%;
+    width: 940px;
     margin: auto;
     padding-top: 20px;
 }
@@ -116,17 +115,17 @@
 
 /* ************************************************ dashboard section start ******************************************* */
 
-#dashboard{
+#dashboard {
     margin-top: 30px;
     padding: 20px;
     border: 1px solid rgb(243, 243, 243);
     border-radius: 20px;
 }
-#dashboard img{
+#dashboard img {
     width: 95%;
     margin: 20px auto 0px;
 }
-#dashboard button{
+#dashboard button {
     padding: 10px 30px;
     border-radius: 5px;
     color: #333333;
@@ -134,7 +133,7 @@
     background-color: white;
     font-size: 16px;
 }
-#dashboard button:hover{
+#dashboard button:hover {
     background-color: #eeeeee;
 }
 
@@ -142,18 +141,18 @@
 
 /* ************************************************ Investors section start ***************************************** */
 
-#investor{
+#investor {
     margin-top: 100px;
 }
-#investor>div{
+#investor > div {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 0px 200px;
     margin-top: 40px;
     justify-items: center;
     align-items: center;
 }
-#investor img{
+#investor img {
     width: 100%;
 }
 
@@ -161,35 +160,35 @@
 
 /* ************************************************ Spotlight section start ***************************************** */
 
-#spotlight{
+#spotlight {
     margin-top: 100px;
     margin-bottom: -40px;
 }
-#spotlight h3{
+#spotlight h3 {
     font-weight: normal;
 }
-#spotlight>div{
+#spotlight > div {
     display: flex;
     justify-content: space-between;
 }
-#spotlight>div>div:nth-child(1){
+#spotlight > div > div:nth-child(1) {
     width: 50%;
 }
-#spotlight>div>div:nth-child(2){
+#spotlight > div > div:nth-child(2) {
     width: 49%;
     height: 400px;
     align-items: center;
 }
-#spotlight img{
+#spotlight img {
     width: 93%;
     margin-top: 30px;
     transition: ease-out 0.8s;
 }
-#spotlight img:hover{
+#spotlight img:hover {
     width: 97%;
     transform: rotate(-10deg);
 }
-#spotlight a{
+#spotlight a {
     color: red;
     font-size: 12px;
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AirGarage Dashboard</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="loginAndSignup.css">
 </head>
 <body>
     <div>
@@ -17,18 +17,51 @@
                 <img src="https://dashboard.airgarage.com/static/media/money_machine.b5d474b0.png" alt="">
             </div>
         </div>
-        <div id="loginForm">
+        <div id="form">
             <div></div>
             <div id="heading">
                 <h2>Log in to AirGarage</h2>
-                <p><b>Or <a href="">signup</a></b></p>
+                <p><b>Or <a href="signup.html">signup</a></b></p>
             </div>
             <form action="">
-                <label for="usename">Email or Phone Number</label>
-                <input type="text" placeholder="Email or Phone">
-                <input type="submit" value="GET VERIFICATION CODE">
+                <label for="">Email</label>
+                <input id="email" type="email" placeholder="Email">
+                <label for="">Password</label>
+                <input id="password" type="password" placeholder="Password">
+                <input type="submit" value="SUBMIT">
             </form>
+            <div></div>
         </div>
     </div>
 </body>
 </html>
+
+<script>
+    let form=document.querySelector("form");
+    form.addEventListener("submit",checkuser)
+
+    let data=JSON.parse(localStorage.getItem("userData")) || []
+
+    console.log(data)
+
+    function checkuser(){
+        event.preventDefault();
+        if(form.email.value=="" || form.password.value==""){
+            alert("Fill all fields")
+            return
+        }
+        let flag=false;
+        for(let i=0;i<data.length;i++){
+            if(form.email.value==data[i].email && form.password.value==data[i].password){
+                flag=true;
+                break;
+            }
+        }
+        if(flag==true){
+            alert("Login Successfull")
+            window.location.href="index.html"
+        }else{
+            alert("Wrong Credentials!")
+        }
+    }
+</script>

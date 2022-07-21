@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirGarage Dashboard</title>
+    <link rel="stylesheet" href="loginAndSignup.css">
+</head>
+
+<body>
+    <div>
+        <div id="image">
+            <div>
+                <img id="logo" src="https://dashboard.airgarage.com/static/media/AirGarage.919cc784.png" alt="">
+            </div>
+            <div>
+                <img src="https://dashboard.airgarage.com/static/media/money_machine.b5d474b0.png" alt="">
+            </div>
+        </div>
+        <div id="form">
+            <div></div>
+            <div id="heading">
+                <h2>Sign up for AirGarage</h2>
+            </div>
+            <form action="">
+                <label for="">First name</label>
+                <input id="firstName" type="text" placeholder="First name">
+                <label for="">Last name</label>
+                <input id="lastName" type="text" placeholder="Last name">
+                <label for="">Email</label>
+                <input id="email" type="email" placeholder="Email">
+                <label for="">Password</label>
+                <input id="password" type="password" placeholder="Password">
+                <label for="">I agree to the:</label>
+                <div id="checkbox">
+                    <input id="check" type="checkbox" value="1">
+                    <label for="">Lot Owner <a href="https://product.airgara.ge/agreement">Service Agreement</a></label>
+                </div>
+                <input type="submit" value="SUBMIT">
+            </form>
+            <div></div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    let form = document.querySelector("form");
+    form.addEventListener("submit", data)
+
+    let dataArr = JSON.parse(localStorage.getItem("userData")) || [];
+
+    function data() {
+        event.preventDefault()
+
+        let check = false
+        if (document.querySelector("#check").checked) {
+            check = true
+        }
+
+        if (form.firstName.value == "" || form.lastName.value == "" || form.email.value == "" || form.password.value == "") {
+            alert("Fill all fields!")
+            return
+        }
+        if (check == false) {
+            alert("Checkbox is empty!")
+            return
+        }
+        for(let i=0;i<dataArr.length;i++){
+            if(form.email.value==dataArr[i].email){
+                alert("Email already exists!")
+                return
+            }
+        }
+
+        let dataObj = {
+            name: form.firstName.value + " " + form.lastName.value,
+            email: form.email.value,
+            password: form.password.value,
+        }
+
+        dataArr.push(dataObj),
+            localStorage.setItem("userData", JSON.stringify(dataArr))
+
+        alert("Signup Successfull")
+        window.location.href = "index.html"
+    }
+
+</script>
