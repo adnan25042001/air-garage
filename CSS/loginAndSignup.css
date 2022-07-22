@@ -1,66 +1,65 @@
-
-body{
+body {
     margin: 0px;
-    font-family: "Lato","Helvetica Neue",Arial,Helvetica,sans-serif;
+    font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
-a{
+a {
     text-decoration: none;
     color: #4183c4;
 }
-body>div{
+body > div {
     width: 100%;
     height: 100vh;
     display: flex;
 }
-#image{
+#image {
     background-color: #fec;
     width: 37.5%;
 }
 
-#image>div:first-child{
+#image > div:first-child {
     height: 30vh;
     padding: 15px;
 }
-#logo{
+#logo {
     width: 150px;
 }
-#image>div:last-child>img{
+#image > div:last-child > img {
     width: 75%;
     margin-left: 75px;
 }
-#form{
+#form {
     width: 62.5%;
 }
-#form>div:first-child{
+#form > div:first-child {
     width: 100%;
     height: 14px;
     background-color: rgb(248, 248, 248);
 }
-#heading{
+#heading {
     text-align: center;
     margin-top: 120px;
 }
-h2{
-    color: rgba(0,0,0,.87);
+h2 {
+    color: rgba(0, 0, 0, 0.87);
     margin-bottom: -5px;
 }
-p{
+p {
     font-size: 14px;
 }
-form{
+form {
     width: 40%;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
-label{
+label {
     font-size: 12px;
     font-weight: bold;
     margin-top: 25px;
     margin-left: 5px;
     margin-bottom: 10px;
 }
-input{
+input {
     margin-top: 7px;
     padding: 17px 30px;
     font-size: 14px;
@@ -69,21 +68,21 @@ input{
     outline: none;
     border-radius: 5px;
 }
-#checkbox{
+#checkbox {
     display: flex;
 }
-#checkbox label{
+#checkbox label {
     margin-top: 15px;
     margin-left: 5px;
 }
-input[type="submit"]{
+input[type="submit"] {
     margin-top: 15px;
     background-color: #ffeabf;
     color: #fa824c;
     font-weight: bold;
     letter-spacing: 1.4px;
 }
-#form>div:last-child{
+#form > div:last-child {
     position: fixed;
     bottom: 0px;
     width: 100%;
