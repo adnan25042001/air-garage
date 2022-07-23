@@ -3,8 +3,6 @@ form.addEventListener("submit", checkuser);
 
 let data = JSON.parse(localStorage.getItem("userData")) || [];
 
-console.log(data);
-
 function checkuser(event) {
     event.preventDefault();
 
