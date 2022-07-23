@@ -38,7 +38,7 @@
 /* *************************************************** Description section start *************************************************** */
 
 #desc {
-    width: 100%;
+    width: 98.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -243,3 +243,111 @@
 }
 
 /* ******************************************************** Footer section end ************************************************** */
+
+
+
+/* ************************************************ Media query section ***************************************** */
+
+/* ******************************************** Medium Screen section start ********************************* */
+
+@media all and (min-width:768px) and (max-width:991px) {
+    #navbar {
+        width: 728px;
+    }
+    #main {
+        width: 728px;
+    }
+    h2{
+        text-align: center;
+    }
+    #revenue{
+        margin-top: -10px;
+    }
+    #revenue h2{
+        text-align: left;
+    }
+    #dashboard img {
+        height: 400px;
+    }
+    #investor > div {
+        gap: 0px 70px;
+    }
+    #footer > div {
+        width: 728px;
+    }
+}
+
+/* ******************************************** Medium Screen section end ******************************************* */
+
+/* ******************************************** Small Screen section start ****************************************** */
+
+@media all and (min-width:480px) and (max-width:767px) {
+    h1,h2{
+        font-size: 18px;
+    }
+    #navbar {
+        width: 100%;
+    }
+    #navbar img{
+        margin-left: 30px;
+    }
+    #main{
+        width: 92%;
+    }
+    #partner h5{
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    #partner>div>div img{
+        width: 65px;
+        margin-bottom: -30px;
+    }
+    #parkingimg {
+        flex-direction: column;
+    }
+    #parkingimg h3{
+        text-align: center;
+        font-size: 18px;
+    }
+    #parkingimg > div {
+        width: 100%;
+    }
+    #parkingimg > div > img {
+        width: 70%;
+    }
+    #dashboard img {
+        height: 370px;
+    }
+    #data{
+        margin-top: 50px;
+    }
+    #investor h2{
+        text-align: center;
+    }
+    #investor > div {
+        gap: 0px 70px;
+    }
+    #investor img {
+        width: 100%;
+    }
+    #spotlight > div {
+        flex-direction: column;
+        width: 100%;
+    }
+    #spotlight h2{
+       text-align: center;
+    }
+    #spotlight > div > div:nth-child(1) {
+        width: 100%;
+    }
+    #spotlight > div > div:nth-child(2) {
+        width: 100%;
+        height: 600px;
+    }
+    #footer > div{
+        width: 90%;
+        
+    }
+}
+
+/* ******************************************** Small Screen section end ******************************************** */
