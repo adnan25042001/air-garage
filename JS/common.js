@@ -11,7 +11,6 @@ let changeBtn = document.querySelectorAll("#dashboard>div>button");
 changeBtn.forEach(function (ele) {
     ele.addEventListener("click", function () {
         if (ele.innerHTML == "Dashboard") {
-            // ele.style.backgroundColor="#f4f6f8"
             document.querySelector("#dashboard>div>img").src =
                 "https://assets.website-files.com/5d55f1425cb6b7a18aa77528/60ad548421171b59d3dec8b7_dash.png";
         }
