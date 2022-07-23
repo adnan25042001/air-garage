@@ -116,7 +116,7 @@ p {
     height: 60px;
 }
 .ease > div > div img {
-    width: 85%;
+    width: 80%;
     transition: ease-out 0.2s;
 }
 .ease > div > div img:hover {

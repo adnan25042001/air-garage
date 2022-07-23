@@ -100,8 +100,12 @@
     border: 1px solid rgb(243, 243, 243);
     border-radius: 20px;
 }
+#dashboard > div:last-child {
+    display: flex;
+    justify-content: center;
+}
 #dashboard img {
-    width: 95%;
+    height: 500px;
     margin: 20px auto 0px;
 }
 #dashboard button {
@@ -111,6 +115,8 @@
     border: none;
     background-color: white;
     font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
 }
 #dashboard button:hover {
     background-color: #eeeeee;
