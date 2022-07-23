@@ -89,3 +89,64 @@ input[type="submit"] {
     height: 14px;
     background-color: rgb(248, 248, 248);
 }
+
+
+/* ************************************************ Media query section ***************************************** */
+
+/* ******************************************** Medium Screen section start ********************************* */
+
+@media all and (min-width:768px) and (max-width:1199px) {
+    #image {
+        background-color: #fec;
+        width: 0px;
+    }
+    
+    #image > div:first-child {
+        padding: 0px;
+    }
+    #logo {
+        width: 0px;
+    }
+    #image > div:last-child > img {
+        width: 0px;
+        margin-left: 0px;
+    }
+    #extra{
+        width: 37%;
+        background-color: #f9f9fc;
+    }
+    #form{
+        width: 63%;
+    }
+}
+
+/* ******************************************** Medium Screen section end ******************************************* */
+
+/* ******************************************** Small Screen section start ****************************************** */
+
+@media all and (max-width:768px) {
+    #image {
+        background-color: #fec;
+        width: 0px;
+    }
+    
+    #image > div:first-child {
+        padding: 0px;
+    }
+    #logo {
+        width: 0px;
+    }
+    #image > div:last-child > img {
+        width: 0px;
+        margin-left: 0px;
+    }
+    #extra{
+        width: 0px;
+        background-color: #f9f9fc;
+    }
+    #form{
+        width: 100%;
+    }
+}
+
+/* ******************************************** Small Screen section end ******************************************** */
