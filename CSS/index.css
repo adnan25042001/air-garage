@@ -316,7 +316,8 @@
         width: 70%;
     }
     #dashboard img {
-        height: 370px;
+        width: 100%;
+        height: auto;
     }
     #data{
         margin-top: 50px;
