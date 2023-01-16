@@ -4,7 +4,7 @@
 Clone of the frontend part of AirGarage website using HTML, CSS and Javascript
 
 
-## Tech Stack
+# Tech Stack
 This clone was built using the following technologies - 
 * HTML
 * CSS
@@ -12,8 +12,6 @@ This clone was built using the following technologies -
 
 
 # Features
-* [Intoduction](#introduction)
-* [login](#login)
-* [Different Pages](#different_pages)
-* [Technologies](#technologies)
-* [Thanks](#thanks)
+- Home page
+- Login & Signup page
+- Management page
