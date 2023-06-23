@@ -4,9 +4,6 @@
 Clone of the frontend part of AirGarage website using HTML, CSS and Javascript
 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c1950f42-3c29-40bf-9c40-f0619dfd381c/deploy-status)](https://app.netlify.com/sites/chat-firebase-app/deploys)
-
-
 # Tech Stack
 This clone was built using the following technologies - 
 * HTML
